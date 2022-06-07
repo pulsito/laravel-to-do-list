@@ -1,0 +1,740 @@
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* 
+   #navigasi {
+    position:relative;
+
+    list-style-type:none;
+    list-style-position:outside;
+   }
+   
+   #navigasi a {
+  
+    padding:8px 16px;
+    line-height:55px;
+    color:#fff;
+    background-color:#6c63ff;
+    text-decoration:none;
+   }
+   
+   #navigasi a:hover {
+    background-color:#6c63ff;
+    color:#fff;
+   }
+   
+   #navigasi li {
+    position:relative;
+    float:left;
+   }
+   
+   #navigasi ul {
+    position:absolute;
+    display:none;
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    list-style-position:outside;
+   }
+   
+   #navigasi li ul a{
+    width:12em;
+    height:auto;
+    float:left;
+   }
+   
+   #navigasi li:hover ul{
+    display:block;
+   }
+   
+   #navigasi li:hover ul ul{
+    display:none;
+   } */
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+header {
+    height: 55px;
+    width: 100%;
+    background-color: #6c63ff;
+    border-bottom: 1px solid #afb9c8;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+    width: 124px;
+    margin-top: 20px;
+}
+
+.header-left {
+    float: left;
+}
+
+
+.header-left {
+    line-height: 55px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+
+}
+
+.header-right {
+    float: right;
+
+
+}
+.header-name{
+    float: right;
+    line-height: 51px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+}
+
+.header-right:hover {
+
+    border-bottom: 5px solid white;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+.header-workspace {
+    float: left;
+    line-height: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    color: white;
+    display: block;
+
+}
+
+.header-workspace:hover {
+
+    border-bottom: 5px solid white;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+.header-right {
+    line-height: 51px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+
+}
+
+.fas {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.lesson-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    margin-top: 10px;
+    /* background-color: black; */
+
+    text-align: center;
+}
+
+
+.lesson {
+    float: left;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* background-color: #007bff; */
+
+}
+
+.lesson h3 {
+    color: #00000091;
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.workspace-title {
+
+    color: #00000091;
+
+    padding-top: 30px;
+}
+
+.workspace-status {
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+.txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.todo-box,
+.inprogress-box,
+.ongoing-box,
+.finished-box {
+    height: 50px;
+
+
+    box-shadow: 2px 6px 5px -1px rgba(140, 119, 119, 0.40);
+    -webkit-box-shadow: 2px 6px 5px -1px rgba(140, 119, 119, 0.40);
+    -moz-box-shadow: 2px 6px 5px -1px rgba(140, 119, 119, 0.40);
+
+
+}
+
+.todo-box {
+    border-top: 5px solid #f4cca4;
+
+}
+
+.inprogress-box {
+    border-top: 5px solid #fb9300;
+}
+
+.ongoing-box {
+    border-top: 5px solid #f54748;
+}
+
+.finished-box {
+    border-top: 5px solid #343f56;
+}
+
+.list-box {
+    margin-top: 10px;
+    height: auto;
+    padding-left: 10px;
+    box-shadow: 2px 6px 5px -1px rgba(140, 119, 119, 0.40);
+    -webkit-box-shadow: 2px 6px 5px -1px rgba(140, 119, 119, 0.40);
+    -moz-box-shadow: 2px 6px 5px -1px rgba(140, 119, 119, 0.40);
+
+}
+
+.list-box span {
+    color: blue;
+}
+
+.clear {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.list-todo {
+    border-left: 5px solid #f4cca4;
+}
+
+.list-inprogress {
+    border-left: 5px solid #fb9300;
+}
+
+.list-ongoing {
+    border-left: 5px solid #f54748;
+}
+
+.list-finished {
+    border-left: 5px solid #343f56;
+}
+
+.list-box h4 {
+    padding-top: 20px;
+
+    font-size: small;
+    color: dimgray;
+}
+
+.list-box p {
+    font-weight: bold;
+}
+
+.list-box h4,
+p {
+    text-align: left;
+}
+
+.button {
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    background-color: white;
+    float: right;
+    margin-right: 10px;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button.todo {
+    border: 3px solid #6c63ff;
+    color: #6c63ff;
+}
+
+.button.todo:hover {
+    border-radius: 50px;
+    background: #6c63ff;
+    color: #fff;
+}
+
+.button.todo:after {
+    content: '\f067';
+    font-family: FontAwesome;
+}
+
+
+.button.inprogress {
+    border: 3px solid #fb9300;
+    color: #fb9300;
+}
+
+.button.inprogress:hover {
+    border-radius: 50px;
+    background: #fb9300;
+    color: #fff;
+}
+
+.button.inprogress:after {
+    content: '\f067';
+    font-family: FontAwesome;
+}
+
+.button.ongoing {
+    border: 3px solid #f54748;
+    color: #f54748;
+}
+
+.button.ongoing:hover {
+    border-radius: 50px;
+    background: #f54748;
+    color: #fff;
+}
+
+.button.ongoing:after {
+    content: '\f067';
+    font-family: FontAwesome;
+}
+
+
+.button.finished {
+    border: 3px solid #343f56;
+    color: #343f56;
+}
+
+.button.finished:hover {
+    border-radius: 50px;
+    background: #343f56;
+    color: #fff;
+}
+
+.button.finished:after {
+    content: '\f067';
+    font-family: FontAwesome;
+}
+
+.button-next {
+    /* border-radius: 50px; */
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    float: right;
+    height: 50px;
+
+}
+
+.button-next.todo {
+    border: 3px solid #f4cca4;
+    color: #f4cca4;
+}
+
+.button-next.todo:hover {
+    background: #f4cca4;
+    color: #fff;
+}
+
+.button-next.todo:after {
+    content: '\f105';
+    font-family: FontAwesome;
+}
+
+.button-next.inprogress {
+    border: 3px solid #fb9300;
+    color: #fb9300;
+}
+
+.button-next.inprogress:hover {
+    background: #fb9300;
+    color: #fff;
+}
+
+.button-next.inprogress:after {
+    content: '\f105';
+    font-family: FontAwesome;
+}
+
+
+.button-next.ongoing {
+    border: 3px solid #f54748;
+    color: #f54748;
+}
+
+.button-next.ongoing:hover {
+    background: #f54748;
+    color: #fff;
+}
+
+.button-next.ongoing:after {
+    content: '\f105';
+    font-family: FontAwesome;
+}
+
+.button-next.finished {
+    border: 3px solid #343f56;
+    color: #343f56;
+}
+
+.button-next.finished:hover {
+    background: #343f56;
+    color: #fff;
+}
+
+.button-next.finished:after {
+    content: '\f105';
+    font-family: FontAwesome;
+}
+
+
+.button-delete {
+    margin-top: -10px;
+    border-radius: 50px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid red;
+    color: red;
+}
+
+.button-delete:hover {
+    border-radius: 50px;
+    background: red;
+    color: #fff;
+}
+
+.button-delete:after {
+    content: '\f1f8';
+    font-family: FontAwesome;
+}
+
+
+.button-edit {
+    margin-left: 10px;
+    margin-top: -10px;
+    border-radius: 50px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid #185adb;
+    color: #185adb;
+}
+
+.button-edit:hover {
+    border-radius: 50px;
+    background: #185adb;
+    color: #fff;
+}
+
+.button-edit:after {
+    content: '\f044';
+    font-family: FontAwesome;
+}
+
+/* #welcome{
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: white;
+} */
+
+.form-popup {
+    margin: 10px 200px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .15);
+
+    backdrop-filter: blur(5px);
+
+
+}
+
+.form-title {
+    text-align: center;
+    padding-top: 70px;
+
+}
+
+
+.form-container {
+    margin: auto;
+    width: 700px;
+    padding: 10px 0 40px 0;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container [type=email] {
+
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.workspaceform input[type=text],
+.workspaceform input[type=password] {
+
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.workspaceform input[type="submit"] {
+    margin-left: -60px;
+    height: 44px;
+    width: 60px;
+    background: #04AA6D;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+    
+}
+.workspaceform input[type="submit"]:hover {
+    background: #059b64;
+    cursor: pointer;
+}
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.btn-back {
+    text-align: center;
+    position: fixed;
+    background-color: #f0ad4e;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover,
+.btn-back {
+    opacity: 1;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    right: 0;
+
+    bottom: 20;
+    font-size: 100px;
+}
+
+.deadline {
+    display: inline;
+
+}
+
+.menu {
+    margin-left: 90px;
+    margin-top: 5px;
+
+}
+
+
+.button-king {
+    margin-top: -10px;
+    border-radius: 50px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid rgb(240, 206, 54);
+    color: rgb(240, 206, 54);
+}
+
+.button-king:hover {
+    border-radius: 50px;
+    background: rgb(240, 206, 54);
+    color: #fff;
+}
+
+.button-king:after {
+    content: '\f521';
+    font-family: FontAwesome;
+}
+
+.workspace {
+    float: none;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#member {
+    background-color: lightgreen;
+    font-size: 20px;
+    height: 40;
+    margin-bottom: 10px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+}
+
